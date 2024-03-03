@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-dark-color: #292929;
+    --secondary-dark-color: #333333;
+    --third-dark-color: #666666;
+    --light-theme-color: #f1f1f1;
+    --primary-light-color: #E4E9F2;
+    --secondary-light-color: #D0D3D4;
+    --primary-blue-color: #3498DB;
+    --secondary-blue-color: #5FA8D3;
+    --third-blue-color: #04D9B2;
+}
+
+//CONFIGURAÇÃO DO DARKMODE TAILWIND
+.dark\:underline:where([data-mode="dark"], [data-mode="dark"] *) {
+    text-decoration-line: underline
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    @apply transition-colors duration-200;
+}
+
+.container {
+    padding: 2rem 4rem;
+}
+
+.flex__container__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg__dark__primary {
+    background-color: var(--primary-dark-color);
+}
+
+.bg__dark__secondary {
+    background-color: var(--secondary-dark-color);
+}
+
+.bg__dark__third {
+    background-color: var(--third-dark-color);
+}
+
+.bg__blue__primary {
+    background-color: var(--primary-blue-color);
+}
+
+.bg__blue__secondary {
+    background-color: var(--secondary-blue-color);
+}
+
+.bg__blue__third {
+    background-color: var(--third-blue-color);
+}
+
+.bg__light__theme {
+    background-color: var(--light-theme-color);
+}
+
+.bg__light__primary {
+    background-color: var(--primary-light-color);
+}
+
+.bg__light__secondary {
+    background-color: var(--secondary-light-color);
+}
+
+.text__dark__primary {
+    color: var(--primary-dark-color);
+}
+
+.text__dark__secondary {
+    color: var(--secondary-dark-color);
+}
+
+.text__dark__third {
+    color: var(--third-dark-color);
+}
+
+.text__light__primary {
+    color: var(--primary-light-color);
+}
+
+.text__light__secondary {
+    color: var(--secondary-light-color);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

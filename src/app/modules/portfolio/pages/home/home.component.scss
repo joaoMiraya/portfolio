@@ -1,0 +1,13 @@
+.image__shadow {
+    filter: drop-shadow(3px 3px 5px #1f1f1fc4);
+}
+
+.brackets{
+    font-size: 12rem;
+}
+
+@media screen and (min-width: 768px) {
+    .brackets {
+        font-size: 16rem;
+    }
+  }

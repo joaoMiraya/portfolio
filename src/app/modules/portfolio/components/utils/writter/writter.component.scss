@@ -1,0 +1,63 @@
+.typewriter {
+    animation: openBrackets 2s ease;
+}
+
+.typewriter span {
+    position: relative;
+    width: 300px;
+    animation: showInfo 2s ease;
+}
+
+.typewriter span::after {
+    content: "";
+    color: #04D9B2;
+    animation: typeAnimate 20s infinite;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+@keyframes openBrackets {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 200px;
+    }
+}
+
+@keyframes showInfo {
+
+    0%,
+    90% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes typeAnimate {
+
+    0%,
+    25% {
+        content: "Desenvolvedor Full Stack";
+    }
+
+    26%,
+    50% {
+        content: "Cloud Architect";
+    }
+
+    51%,
+    75% {
+        content: "Web Designer";
+    }
+
+    76%,
+    100% {
+        content: "UX/UI Designer";
+    }
+}

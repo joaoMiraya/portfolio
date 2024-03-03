@@ -1,0 +1,55 @@
+<header class=" dark:bg-dark__primary bg-blue__primary py-6 px-8 border-b-[1px] border-solid border-[#04D9B2]">
+    <div class="flex justify-between items-end">
+        <a href="/">
+            <img class="min-w-[4rem] drop-shadow-xl" src="assets/images/icon.webp" alt="icon">
+        </a>
+        <nav class="md:flex hidden ">
+            <ul class="text__light__primary flex gap-4 ">
+                <a href="/blog">
+                    <li class="nav__li__desktop">Blog</li>
+                </a>
+                <a href="/projetos">
+                    <li class="nav__li__desktop">Projetos</li>
+                </a>
+                <a href="/sobre">
+                    <li class="nav__li__desktop">Sobre</li>
+                </a>
+                <a href="/formacao">
+                    <li class="nav__li__desktop">Formação</li>
+                </a>
+                <a href="/tecnologias">
+                    <li class="nav__li__desktop">Tecnologias</li>
+                </a>
+            </ul>
+        </nav>
+        <button (click)="toggleMenu()" class="md:hidden flex flex-col gap-1" [ngClass]="{'active': menuIsOpen}">
+            <span class="hamburguer__stick first__stick"></span>
+            <span class="hamburguer__stick second__stick"></span>
+            <span class="hamburguer__stick third__stick"></span>
+        </button>
+    </div>
+</header>
+
+<aside [ngClass]="{'menu__active' : menuIsOpen}" *ngIf="menuIsOpen"
+    class="md:hidden bg-blue__secondary  dark:bg-dark__secondary h-screen absolute z-40 right-0">
+    <nav>
+        <app-config></app-config>
+        <ul class="text__light__primary py-12 flex flex-col items-center justify-center gap-4 text-center ">
+            <a class="nav__li__mobile" href="/blog">
+                <li>Blog</li>
+            </a>
+            <a class="nav__li__mobile" href="/projetos">
+                <li>Projetos</li>
+            </a>
+            <a class="nav__li__mobile" href="/sobre">
+                <li>Sobre</li>
+            </a>
+            <a class="nav__li__mobile" href="/formacao">
+                <li>Formação</li>
+            </a>
+            <a class="nav__li__mobile" href="/tecnologias">
+                <li>Tecnologias</li>
+            </a>
+        </ul>
+    </nav>
+</aside>
