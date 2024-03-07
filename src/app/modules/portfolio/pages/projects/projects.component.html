@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 class="dark:text-light__primary text-dark__primary text-center text-6xl	 mb-2">Projetos</h1>
+    <div>
+        <ul class="flex flex-col">
+            <li *ngFor="let item of projects" class="flex flex-col items-center gap-2">
+                <span class="self-start">
+                    <h2 class="dark:text-light__primary text-dark__primary">{{item.name}}</h2>
+                    <h3 class="dark:text-light__primary text-dark__primary">{{item.title}}</h3>
+                </span>
+                <div class="max-w-[300px] mb-4">
+                    <img class="object-contain" src={{item.path}} alt="image">
+                </div>
+                <div>
+                    <a target="_blank" href={{item.url}}>
+                        <button
+                            class="py-2 px-4 rounded-md text-dark__primary dark:text-light__primary transition-all duration-300 hover:bg-blue__primary hover:border-blue__primary shadow-md border-[1px] border-solid border-dark__primary dark:border-light__primary">
+                            Acessar
+                        </button>
+                    </a>
+                </div>
+                <article class="dark:text-light__primary text-dark__primary">
+                    {{item.description}}
+                </article>
+            </li>
+        </ul>
+    </div>
+</div>

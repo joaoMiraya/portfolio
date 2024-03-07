@@ -28,9 +28,13 @@
 }
 
 .container {
+    padding: 1rem 2rem;
+}
+@media screen and (min-width: 768px) {
+    .container {
     padding: 2rem 4rem;
 }
-
+}
 .flex__container__center {
     display: flex;
     justify-content: center;

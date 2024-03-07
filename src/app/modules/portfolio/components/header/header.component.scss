@@ -1,14 +1,15 @@
 a img {
-    filter: drop-shadow(0px 0px 3px #04d9b2e0);
+    filter: drop-shadow(1px 1px 1px #5FA8D3);
     transition: all ease .3s;
 }
 
 a img:hover {
-    filter: drop-shadow(0px 0px 5px #00f0c4f8);
+    filter: drop-shadow(0px 0px 3px #92d1fc);
 }
 
 .nav__li__desktop {
     position: relative;
+    cursor: pointer;
 }
 
 .nav__li__desktop::after {
@@ -18,7 +19,7 @@ a img:hover {
     bottom: -6px;
     width: 0%;
     height: 4px;
-    background: var(--third-blue-color);
+    background: #92d1fc;
     border-radius: 1rem;
     display: block;
 
@@ -38,9 +39,11 @@ a img:hover {
 .nav__li__desktop:hover::after {
     animation: none;
     animation: borderAnimate 0.5s ease forwards;
-    box-shadow: 1px 1px 5px #04d9b257;
+    box-shadow: 1px 1px 3px #5FA8D3;
 }
-
+.nav__li__desktop:hover{
+    color:#c1c1c1 ;
+}
 .nav__li__mobile {
     width: 100%;
     padding: 6px 64px;

@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="text-dark__primary dark:text-light__primary text-center mb-6">Formação</h1>
+    <div>
+        <ul class="flex flex-col md:flex-row md:flex-wrap items-center gap-4">
+            <li *ngFor="let data of formation" class="bg-blue__primary/40 dark:bg-dark__third/30 md:min-h-[25rem] w-[300px] flex-grow shadow-md flex flex-col gap-2 justify-between items-center p-2 rounded-lg ">
+                <h2 class="text-dark__primary dark:text-light__primary text-center">{{data.title}}</h2>
+                <img src={{data.path}} class="max-w-[250px] object-scale-down" alt={{data.name}}>
+                <p class="text-dark__primary dark:text-light__primary font-normal ">{{data.name + ' - ' + data.status}}</p>
+            </li>
+        </ul>
+    </div>
+</div>

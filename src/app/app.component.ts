@@ -21,6 +21,7 @@ export class AppComponent {
   private matIconRegistry = inject(MatIconRegistry);
   private domSanitizer = inject(DomSanitizer);
   public openConfig: boolean;
+  public isDark: boolean = false;
 
   constructor(public themeService: ThemeService) {
     this.openConfig = false;
@@ -28,16 +29,23 @@ export class AppComponent {
       this.domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/config.svg')
     );
 
-      //RESPONSAVEL PELO "THEMA"
+    //RESPONSAVEL PELO "THEMA"
     if (typeof localStorage !== 'undefined') {
       function setThemeInStorage() {
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage['theme'] === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark')
+          document.documentElement.classList.add('dark');
         } else {
-          document.documentElement.classList.remove('dark')
+          document.documentElement.classList.remove('dark');
         }
       }
+      const themeInStorage = localStorage.getItem("theme");
+      if (themeInStorage && themeInStorage === 'dark') {
+        this.isDark = true;
+      } else {
+        this.isDark = false
+      }
+
       this.themeService.theme$.subscribe(theme => {
         if (theme === 'dark') {
           setThemeInStorage();

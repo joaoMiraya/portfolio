@@ -1,13 +1,45 @@
 <app-header />
-<main class=" w-screen flex flex-col items-center">
+<main class=" flex flex-col items-center">
+    <span class="absolute right-4 top-28 hidden md:flex">
+        <app-config></app-config>
+    </span>
     <div class="container flex flex-col items-center lg:flex-row lg:items-center lg:justify-between  ">
         <img class="image__shadow md:w-[30rem] mb-24" src="assets/images/image-portfolio.png" alt="image">
-        <div class="flex items-center justify-center lg:ml-24">
-            <span class="dark:text-light__primary text-dark__primary brackets">&#123;</span>
-            <app-writter>
-            </app-writter>
-            <span class="dark:text-light__primary text-dark__primary  brackets">&#125;</span>
+        <div class="flex flex-col items-center md:self-start md:mt-12 justify-center lg:ml-24 min-w-[300px]">
+            <h1 class="dark:text-light__primary text-dark__primary text-center title__home">
+                Olá, meu nome é <b class="text-blue__secondary">João Victor</b>
+                e eu sou um
+            </h1>
+            <div class="flex items-center justify-between text-center mt-6 relative">
+                <span class="dark:text-light__primary text-dark__primary brackets">&#123;</span>
+                <span class="flex items-center justify-center w-[200px] md:w-[350px] xl:w-[500px] h-[65px] md:h-[85px] ">
+                    <app-writter>
+                    </app-writter>
+                </span>
+                <span class="dark:text-light__primary text-dark__primary  brackets">&#125;</span>
+            </div>
         </div>
     </div>
-    <app-about></app-about>
+
+    <section id="contact_section">
+        <app-contact></app-contact>
+    </section>
+
+    <section id="about_section">
+        <app-about></app-about>
+    </section>
+
+    <section id="tecs_section">
+        <app-tecs></app-tecs>
+    </section>
+
+    <section id="projects_section">
+        <app-projects></app-projects>
+    </section>
+
+    <section id="formation_section">
+        <app-formation></app-formation>
+    </section>
+    <app-navigater></app-navigater>
 </main>
+<app-footer></app-footer>

@@ -1,0 +1,159 @@
+{
+    "tecnologias": [
+        {
+            "id": "1",
+            "name": "JavaScript",
+            "path": "assets/images/tecs/js.svg"
+        },
+        {
+            "id": "2",
+            "name": "TypeScript",
+            "path": "assets/images/tecs/ts.svg"
+        },
+        {
+            "id": "3",
+            "name": "React",
+            "path": "assets/images/tecs/react.svg"
+        },
+        {
+            "id": "4",
+            "name": "Angular",
+            "path": "assets/images/tecs/angular.svg"
+        },
+        {
+            "id": "5",
+            "name": "NodeJs",
+            "path": "assets/images/tecs/node.svg"
+        },
+        {
+            "id": "6",
+            "name": "ExpressJs",
+            "path": "assets/images/tecs/express.svg"
+        },
+        {
+            "id": "7",
+            "name": "AWS",
+            "path": "assets/images/tecs/aws.svg"
+        },
+        {
+            "id": "8",
+            "name": "MySQL",
+            "path": "assets/images/tecs/mysql.svg"
+        },
+        {
+            "id": "9",
+            "name": "PostgreSQL",
+            "path": "assets/images/tecs/postgresql.svg"
+        },
+        {
+            "id": "10",
+            "name": "Docker",
+            "path": "assets/images/tecs/docker.svg"
+        },
+        {
+            "id": "11",
+            "name": "Firebase",
+            "path": "assets/images/tecs/firebase.svg"
+        },
+        {
+            "id": "12",
+            "name": "Figma",
+            "path": "assets/images/tecs/figma.svg"
+        },
+        {
+            "id": "13",
+            "name": "TailWindCSS",
+            "path": "assets/images/tecs/tailwind.svg"
+        },
+        {
+            "id": "14",
+            "name": "PHP",
+            "path": "assets/images/tecs/php.svg"
+        }
+    ],
+    "projetos": [
+        {
+            "id": "1",
+            "name": "Chapa's Lanches",
+            "title": "Sistema para Delivery e Mesas",
+            "description": "Desenvolvi uma aplicação web utilizando ReactJs e Firebase. Esta aplicação é um sistema de pedidos delivery, onde os clientes têm a opção de criar uma conta ou entrar como visitantes, sem a necessidade de cadastro, mas ainda assim autenticados. Os clientes podem fazer pedidos diretamente pelo aplicativo, sem a necessidade de contato com um atendente humano. Além disso, os funcionários, como garçons e motoqueiros, têm contas com privilégios específicos que lhes permitem utilizar recursos personalizados para facilitar suas atividades diárias e otimizar seu tempo.",
+            "path": "assets/images/mockup.png",
+            "url": "https://www.chapas-lanches.com.br"
+        }
+    ],
+    "formacao": [
+        {
+            "id": "1",
+            "name": "Unimar",
+            "title": "Análise e Desenvolvimento de Sistemas",
+            "path": "assets/images/unimar.png",
+            "status": "Em andamento"
+        },
+        {
+            "id": "2",
+            "name": "Escola da Nuvem",
+            "title": "Programa AWS Re/Start",
+            "path": "assets/images/edn.png",
+            "status": "Completo"
+        },
+        {
+            "id": "3",
+            "name": "Digital House Brasil",
+            "title": "Desenvolvimento Web Full Stack",
+            "path": "assets/images/dhlogo.webp",
+            "status": "Completo"
+        },
+        {
+            "id": "4",
+            "name": "Oracle & Alura",
+            "title": "Programa ONE (Oracle Next Education)",
+            "path": "assets/images/aluralogo.webp",
+            "status": "Completo"
+        },
+        {
+            "id": "5",
+            "name": "Bootcamp Banco Pan",
+            "title": "Desenvolvimento Front-End com Angular",
+            "path": "assets/images/diologo.webp",
+            "status": "Completo"
+        }
+    ],
+    "contato": [
+        {
+            "id": "1",
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/joaomiraya",
+            "icon": "linkedin_icon"
+        },
+        {
+            "id": "2",
+            "name": "GitHub",
+            "url": "https://www.github.com/joaoMiraya",
+            "icon": "github_icon"
+        },
+        {
+            "id": "3",
+            "name": "Gmail",
+            "url": "mailto:joaomiraya01@gmail.com",
+            "icon": "gmail_icon"
+        },
+        {
+            "id": "4",
+            "name": "WhatsApp",
+            "url": "whatsapp://send?phone=+5518981628581",
+            "icon": "zapzap_icon"
+        },
+        {
+            "id": "5",
+            "name": "Instagram",
+            "url": "https://www.instagram.com/joaomiraya/",
+            "icon": "instagram_icon"
+        },
+        {
+            "id": "6",
+            "name": "Curriculum",
+            "url": "assets/images/CV-JoaoMiraya.pdf",
+            "icon": "cv_icon"
+        }
+    ]
+}

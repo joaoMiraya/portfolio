@@ -1,18 +1,23 @@
 <div class="flex flex-col p-2">
     <span class="flex justify-end p-2">
         <button (click)="toggleOpenConfig()">
-            <mat-icon class=" text-light__primary  hover:-rotate-45 transition-all ease-linear duration-300"
+            <mat-icon
+                class=" dark:text-light__primary text-dark__primary  hover:-rotate-45 transition-all ease-linear duration-300"
                 svgIcon="config_icon_fill"></mat-icon>
         </button>
     </span>
 
     <aside class="bg-dark__third/20 p-4 rounded-lg" *ngIf="openConfig">
         <span class="flex gap-2">
-            <button class="  w-10 h-10 flex items-center justify-center hover:bg-dark__primary/40 rounded-full p-1" (click)="setLightTheme()">
-                <mat-icon class="text-light__primary dark w-8 h-8" svgIcon="light_theme_icon"></mat-icon>
+            <button [ngClass]="{'bg-dark__primary/40 p-1 rounded-full': !isDark}"
+                class="  w-10 h-10 flex items-center justify-center rounded-full p-1"
+                (click)="setLightTheme()">
+                <mat-icon class=" text-light__primary dark w-8 h-8" svgIcon="light_theme_icon"></mat-icon>
             </button>
-            <button class="  w-10 h-10 flex items-center justify-center hover:bg-dark__primary/40 rounded-full p-1" (click)="setDarkTheme()">
-                <mat-icon class="text-light__primary dark w-6 h-6" svgIcon="dark_theme_icon"></mat-icon>
+            <button [ngClass]="{'bg-dark__primary/40 p-1 rounded-full': isDark}"
+                class="  w-10 h-10 flex items-center justify-center rounded-full p-1"
+                (click)="setDarkTheme()">
+                <mat-icon class="   dark w-6 h-6" svgIcon="dark_theme_icon"></mat-icon>
             </button>
         </span>
     </aside>

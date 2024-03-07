@@ -14,11 +14,11 @@ export class ConfigComponent extends AppComponent {
 
   toggleOpenConfig() {
     this.openConfig = !this.openConfig;
-
   }
   setDarkTheme() {
     localStorage.setItem('theme', 'dark');
     this.themeService.setTheme('dark')
+
   }
   setLightTheme() {
     localStorage.setItem('theme', 'light');

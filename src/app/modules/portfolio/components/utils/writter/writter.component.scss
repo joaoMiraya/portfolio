@@ -1,29 +1,18 @@
-.typewriter {
-    animation: openBrackets 2s ease;
-}
-
 .typewriter span {
     position: relative;
     width: 300px;
     animation: showInfo 2s ease;
+    word-wrap: break-word;
 }
 
 .typewriter span::after {
     content: "";
-    color: #04D9B2;
-    animation: typeAnimate 20s infinite;
+    color: #3498DB;
+    animation: typeAnimate 10s ease infinite;
     font-size: 1.6rem;
+    line-height: 1;
     text-align: center;
-}
-
-@keyframes openBrackets {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 200px;
-    }
+    
 }
 
 @keyframes showInfo {
@@ -59,5 +48,15 @@
     76%,
     100% {
         content: "UX/UI Designer";
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .typewriter span {
+        width: 500px;
+    }
+
+    .typewriter span::after {
+        font-size: 2.5rem;
     }
 }

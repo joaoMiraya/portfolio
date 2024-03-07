@@ -1,0 +1,13 @@
+<div class="container mt-12 md:mt-0 md:mb-20">
+    <h2 class="text-dark__primary dark:text-light__primary">Meus Contatos:</h2>
+    <ul class="flex justify-center items-center flex-wrap gap-2 ">
+        <li *ngFor="let data of contacts">
+            <a target="_blank" download
+                class="flex hover:shadow-light__primary text-dark__primary dark:text-light__primary  hover:scale-105 transition-all ease-linear duration-300 shadow-sm border-[1px] border-solid border-dark__primary dark:border-light__primary items-center justify-around gap-2 py-2 px-4 rounded-md"
+                href={{data.url}}>
+                <mat-icon svgIcon={{data.icon}}></mat-icon>
+                {{data.name}}
+            </a>
+        </li>
+    </ul>
+</div>

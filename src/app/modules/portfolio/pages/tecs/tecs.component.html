@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="dark:text-light__primary text-dark__primary text-center text-6xl	 mb-2">Tecnologias</h1>
+    <ul class="flex flex-wrap items-center justify-center gap-4">
+        <li *ngFor="let item of tecs"
+            class="dark:bg-dark__third/30 bg-blue__primary/60 dark:text-light__primary shadow-md flex flex-col items-center hover:-translate-y-3 transition-transform duration-300 justify-center p-2 rounded-lg min-w-[8rem]">
+            <p class="text-lg">{{item.name}}</p>
+            <img class="w-[5rem] drop-shadow-md" src={{item.path}} alt={{item.name}}>
+        </li>
+    </ul>
+</div>

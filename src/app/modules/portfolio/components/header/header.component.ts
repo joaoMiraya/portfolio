@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ConfigComponent } from '../utils/config/config.component';
+import { NavigateService } from '../../services/navigate.service';
 
 
 
@@ -16,10 +17,13 @@ import { ConfigComponent } from '../utils/config/config.component';
 export class HeaderComponent {
   menuIsOpen: boolean;
 
-  constructor() {
+  constructor(private navigateService: NavigateService) {
     this.menuIsOpen = false;
   }
   toggleMenu() {
     this.menuIsOpen = !this.menuIsOpen;
+  }
+  navigate(target: string) {
+    this.navigateService.scrollToElement(target);
   }
 }
