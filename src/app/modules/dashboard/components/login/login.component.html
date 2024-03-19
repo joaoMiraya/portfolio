@@ -1,0 +1,22 @@
+<div class="container h-screen flex justify-center">
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+        <div
+            class="flex flex-col items-center gap-2 shadow-md bg-blue__secondary/30 dark:bg-light__primary p-6 rounded-md ">
+            <h1>Entrar como Admin</h1>
+            <span class="relative">
+                <label class="absolute top-[-1.2rem]" for="email">Email</label>
+                <input type="email" name="email" id="email" formControlName="email">
+            </span>
+
+            <span class="relative mt-6">
+                <label class="absolute top-[-1.2rem]" for="password">Senha</label>
+                <input type="password" name="password" id="password" formControlName="password">
+            </span>
+            <p class="text-red">{{errors}}</p>
+
+            <button class="self-end py-2 px-6 bg-blue__primary rounded-md text-light__primary font-semibold mt-4"
+                type="submit">Enviar</button>
+        </div>
+    </form>
+
+</div>

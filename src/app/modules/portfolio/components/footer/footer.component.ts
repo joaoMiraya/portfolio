@@ -1,24 +1,13 @@
-import { Component } from '@angular/core';
+import { DatePipe } from '@angular/common';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  public year: number;
-  public author: string;
-  public text: string;
-
-  constructor() {
-    const date = new Date();
-    this.year = date.getFullYear();
-    this.text = 'Desenvolvido por'
-    this.author = 'João Victor B Miraya'
-  }
-  concatValue() {
-    return '© ' + this.text + ' ' + this.author + ' - ' + this.year
-  }
+  public date = signal(new Date());
 }
