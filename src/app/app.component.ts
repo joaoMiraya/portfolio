@@ -11,7 +11,7 @@ import { ThemeService } from './modules/portfolio/services/theme.service';
   imports: [
     RouterOutlet,
     CommonModule,
-    MatIconModule
+    MatIconModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

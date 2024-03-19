@@ -91,16 +91,16 @@
         },
         {
             "id": "2",
-            "name": "Escola da Nuvem",
-            "title": "Programa AWS Re/Start",
-            "path": "assets/images/edn.png",
-            "status": "Completo"
+            "name": "PROA",
+            "title": "Desenvolvimento Profissional",
+            "path": "assets/images/proa.webp",
+            "status": "Em andamento"
         },
         {
             "id": "3",
-            "name": "Digital House Brasil",
-            "title": "Desenvolvimento Web Full Stack",
-            "path": "assets/images/dhlogo.webp",
+            "name": "Escola da Nuvem",
+            "title": "Programa AWS Re/Start",
+            "path": "assets/images/edn.png",
             "status": "Completo"
         },
         {
@@ -115,6 +115,13 @@
             "name": "Bootcamp Banco Pan",
             "title": "Desenvolvimento Front-End com Angular",
             "path": "assets/images/diologo.webp",
+            "status": "Completo"
+        },
+        {
+            "id": "6",
+            "name": "Digital House Brasil",
+            "title": "Desenvolvimento Web Full Stack",
+            "path": "assets/images/dhlogo.webp",
             "status": "Completo"
         }
     ],
