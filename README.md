@@ -1,3 +1,10 @@
+
+## Todos
+
+* Meu aprendizado - sessão onde irei detalhar formações e cursos que eu participei
+* Learning - Sessão onde irei dividr em áreas de meu domínio. AWS / Back End / Front End / UX/UI Design
+* How to Learn - Sessão onde  irei listar sites, livros e criadores de conteúdos tech 
+
 # App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
